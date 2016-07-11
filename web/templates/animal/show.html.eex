@@ -1,0 +1,13 @@
+<h2>Show animal</h2>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @animal.name %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: animal_path(@conn, :edit, @animal) %>
+<%= link "Back", to: animal_path(@conn, :index) %>
